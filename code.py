@@ -46,5 +46,8 @@ def delete(key):
                 print("Deleted successfully")
             else:
                 print("Key expired")
+        else:
+            d.pop(key)
+            print("Deleted Successfully")
     else:
         print("Key not found")
