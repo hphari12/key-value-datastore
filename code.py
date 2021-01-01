@@ -29,11 +29,11 @@ def read(key):
         l=d[key]
         if l[1]!=0:
             if time.time()<l[1]:#comparing present time and expiry time
-                return l[0]                
+                print(l[0])                
             else:
                 print("Key expired")
         else:
-            return l[0]
+            print(l[0])
     else:
         print("Key not found")    
 #for deleting key in datastore
